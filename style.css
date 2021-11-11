@@ -1,0 +1,161 @@
+body{
+    background-color: #CEDEEA;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(./img/fondobody.jpg);
+    /* background-repeat: no-repeat; */
+}
+#board{
+    width: 300px;
+    height: 300px;
+}
+.myRow{
+    width: 500px;
+    height: 30px;
+}
+.grid{
+    width: 30px;
+    height: 30px;
+    border: black 0.5px solid;
+    display: inline-block;
+    background-color: white;
+}
+.position{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.selected{
+    background-color: #0099CC;
+}
+.hit{
+    background-color: red;
+}
+.miss{
+    background-color: rgb(58, 58, 58);
+}
+
+.titulo {
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-family: Comic Sans MS; 
+    font-weight:bold; 
+    font-size: 70px; 
+    color: #EBD758; 
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68; 
+}
+/* .subtitulo {
+    margin-bottom: 5%;
+    font-family: Comic Sans MS; 
+    font-weight:bold; 
+    font-size: 45px; 
+    color: #EBD758; 
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68; 
+} */
+.titulo-naves {
+    margin-top: 3%;
+    margin-bottom: 2%;
+    font-family: Comic Sans MS; 
+    font-weight:bold; 
+    font-size: 40px; 
+    color: #EBD758; 
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68; 
+}
+
+.tipo {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: Comic Sans MS; 
+    font-weight:bold; 
+    font-size: 30px; 
+    color: #EBD758; 
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68; 
+}
+
+.tamaño {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: Comic Sans MS; 
+    font-weight:bold; 
+    font-size: 20px; 
+    color: #EBD758; 
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68; 
+}
+
+.horizontal {
+    width: 70%;
+    height: 60px;
+    align-items: center;
+    color: #EBD758;
+    /* background: transparent; */
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+    border: none;
+      color: black;
+      padding: 16px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+}
+.horizontal:hover {
+    background-color: #0099CC;
+    color: black;
+}
+
+.vertical {
+    width: 70%;
+    height: 60px;
+    color: #EBD758;
+    /* background: transparent; */
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.vertical:hover {
+    background-color: #991e1a;
+    color: black;
+}
+
+.buttonStart {
+    color: #EBD758;
+    background: transparent;
+    background-color: white;
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+.buttonStart:hover {
+    background-color: #00a323;
+}

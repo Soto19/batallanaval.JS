@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>BattleShip Game</title>
+</head>
+
+<body>
+    <h1 class="titulo">Batalla Naval</h1>
+    <!-- <h3 class="subtitulo">Selecciona la posición de tus naves</h3> -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="board">
+                </div>
+            </div>
+            <div class="col">
+                <div id="boardAttack">
+                </div>
+            </div>
+        </div>
+        <h4 class="titulo-naves">Tus naves</h4>
+        <div id="ships" class="row">
+            <div class="col">
+                <div>
+                    <p class="tipo">Portaviones</p>
+                    <p class="tamaño">Tamaño: 5</p>
+                </div>
+                <div class="position"></div>
+            </div>
+            <div class="col">
+                <div>
+                    <p class="tipo">Acorazado</p>
+                    <p class="tamaño">Tamaño: 4</p>
+                </div>
+                <div class="position"></div>
+            </div>
+            <div class="col">
+                <div>
+                    <p class="tipo">Submarino</p>
+                    <p class="tamaño">Tamaño: 3</p>
+                </div>
+                <div class="position"></div>
+            </div>
+            <div class="col">
+                <div>
+                    <p class="tipo">Destructor</p>
+                    <p class="tamaño">Tamaño: 2</p>
+                </div>
+                <div class="position"></div>
+            </div>
+        </div>
+        <div class="row-3">
+            <div></div>
+            <button class="buttonStart" id="button" onclick="startGame()">Empezar juego</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
